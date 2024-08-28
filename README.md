@@ -84,20 +84,3 @@ LANGCHAIN_API_KEY = ''
 LANGCHAIN_PROJECT = ''
 ```
 
-
-
-## 📝 Citation
-
-如果对你有帮助，请以以下格式引用我们：
-
-```
-@misc{2024Generative AI Quant,
-      title={Generative AI Quant: The Future or Folly?},
-      author={},
-      year={2024},
-      eprint={},
-      archivePrefix={arXiv},
-      primaryClass={q-fin.TR}
-}
-```
-
