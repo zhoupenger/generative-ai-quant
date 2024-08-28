@@ -1,0 +1,6 @@
+please make an investment decision based on short-term price changes and long-term price changes.
+Here are their respective changes:
+short-term price changes: {short_term_price_changes}
+long-term price changes: {long_term_price_changes}
+Important: You don't need to explain the reason, only output and respond one word with 'LONG', 'SHORT', or 'WAIT'.
+Please note that you should prefer to select 'LONG' or 'SHORT' instead of 'WAIT'.

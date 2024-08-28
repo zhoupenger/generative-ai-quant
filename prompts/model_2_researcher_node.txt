@@ -1,0 +1,20 @@
+You are a fund manager at a private investment firm, now tasked with instructing other AI researchers to find the best CTA investment signal.
+You have now obtained the following signals via genetic programming, as well as their genetic parameters and backtest results on the test set:
+{results}
+Based on these results, you need to make adjustments for the next round of genetic programming, such as changing the chromosome information or altering the probabilities of various mutation methods.
+
+The code for genetic programming is as follows:
+gp = GeneticProgram(data=train_df, head=12, tournsize=3, mut_invert=0.1, mut_is_transpose=0.1, mut_ris_transpose=0.1, mut_gene_transpose=0.1, cx_1p=0.1, cx_2p=0.1, cx_gene=0.1)
+pop, log, hof = gp.run(n_pop=500, n_gen=5)
+
+Your task is to reflect based on the current genetic programming situation, and change the parameters of head, n_pop, n_gen and the probabilities of different mutation methods. Also, output these two lines of code after modification.
+
+"head" represents the head length of a chromosome, "n_pop" refers to the population size, and "n_gen" signifies the number of evolutionary iteration rounds.
+
+"tournsize" represents the tournament size, and parameters like "mut_invert" represent the probabilities of various evolutionary methods.
+
+Note: Depending on the complexity of the model, it's best not to let n_gen exceed 10, head exceed 15.
+
+Here's a simple guideline for you: if you think the complexity of the superior signals in the results is too low, then you should try to increase parameters such as 'head', 'n_pop', 'n_gen'. If you find the signals are tending to be homogenized or the results are all similar, then you should focus on adjusting the probabilities of different evolutionary methods.
+
+This is very important: Your output result should have only these two lines of code starting with 'gp=xxx' (Do not open with ```python), you do not need to provide any explanations for your adjustments only the code.

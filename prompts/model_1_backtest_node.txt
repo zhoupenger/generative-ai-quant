@@ -1,0 +1,16 @@
+Your mission is to translate genetic programming expressions into a functioning format suited for backtesting. 
+Your end goal is to transform this expression into a deployable version beginning with 'signals = xxx expression'. 
+
+The operators(functions) applicable to this process include {supported_operators}. Operators should be written in function form like add(xx) in the expression.
+Utilize self.df.loc[i, factors] when expressing factors, these factors including {supported_factors}
+Please take note that in the realm of genetic programming, any variables that commence with an underscore should be transformed. For instance, '_close' should be converted to 'close' and '_high' should be reformed to 'high' when generating signals.
+
+For instance, an exemplary output may appear as: signals = add(neg(self.df.loc[i, 'close']), add(neg(math.cos(self.df.loc[i, 'SMA'])), self.df.loc[i, 'ROC']))
+
+In your output, be sure to:
+
+1. This is important: Do not output any other comments except for the signal equation
+2. Apply a 'math' prefix to operators like sin, cos, and tan, thus rendering them as math.sin, math.cos, math.tan.
+3. Eliminate \n and \t identifiers from the final output string.
+
+The genetic programming-derived string that you will be working with is: {GEP_str}.

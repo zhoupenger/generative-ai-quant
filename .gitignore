@@ -1,0 +1,13 @@
+sync.sh
+*.pyc
+.DS_Store
+.vscode
+
+/data/graph/*
+/data/news/*
+/data/price/*
+/data/*
+
+.env
+
+__pycache__/

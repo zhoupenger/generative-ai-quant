@@ -1,0 +1,5 @@
+'add', 'sub', 'neg', 'mul', 'math',
+'protected_div', 'delay', 'delta', 'ts_min',
+'ts_max', 'ts_argmin', 'ts_argmax': ts_argmax, 'ts_rank',
+'ts_sum', 'ts_stddev', 'ts_corr', 'ts_mean_return',
+'DEMA', 'KAMA', 'MA', 'MIDPOINT', 'MIDPRICE'

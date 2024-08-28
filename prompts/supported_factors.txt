@@ -1,0 +1,1 @@
+_open, _high, _low, _close, _volume, SMA, EMA, RSI, DX, ATR, BIAS, ROC
